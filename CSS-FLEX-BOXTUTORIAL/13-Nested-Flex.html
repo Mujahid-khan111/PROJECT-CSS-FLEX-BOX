@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <title>CSS FLEXBOX</title>
+    <head>
+        <style>
+            body{font-family:arial,helvetica;}
+            h1{padding: 0 0 0 40px;}
+          
+            .container{
+                background: #eee;
+                 margin : 50px ;
+                border : 3px solid #000;
+
+                display  : flex;
+                flex-direction: column;                                         
+            }
+
+            .items{
+                color: solid #000;
+                 padding:0px;
+                 margin:0px;
+                 font-size:20px;
+                 height:100px;
+
+                  display: flex;
+            }
+
+           .item1{background: hotpink;}
+           .item2{background: blueviolet;
+             .subitems{
+                background: wheat;
+                color: mediumblue;
+                flex-grow: 1;
+                margin: 5px;
+                
+             }
+        }
+           .item3{background: green;}
+            
+           
+            
+        </style>
+    </head>
+    <body>
+        <h1>mujju-111 : Flex-Direction</h1>
+        <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">
+         <div class="subitems subitems">A</div>
+         <div class="subitems subitems">B</div>
+         <div class="subitems subitems">C</div>     
+        </div>
+        <div class="items item3">Three</div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox wabsit e Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: arial;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+        header{
+            background: rgba(153, 205, 50, 0.979);
+            display: flex;
+            align-items: center;
+            padding: 15px;
+        }
+        header ul{
+            list-style: none;
+            display: flex;
+        }
+        #logo{
+            margin: 0 auto;
+        }
+        a{
+            text-decoration: none;
+        }
+        #menu li{
+            padding: 10px;
+        }
+        #social-link li{
+            padding: 10px;
+        }
+        #logo{
+            font-size: 30px;
+            margin:  auto;
+        }
+        header a{
+            color:black;
+        }
+       #main ul{
+       list-style: none;
+       }
+       .services-container{
+        display: flex;
+        justify-content: space-between;
+       } 
+       .service-box img{
+        border: 3px solid black; 
+        width: 250px;
+        height: 200px;
+    }
+       .service-box{
+        border: solid black 0px;
+        flex-basis:332%;
+        max-width: 370;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+       }
+       .call-to-action{
+        align-self:flex-start ;
+        margin-top: auto;
+
+       }
+       .call-to-action a{
+        background: blue;
+        border: 1px solid transparent;
+        color: #fff;
+        padding: 5px 15px;
+        display: block;
+
+        }
+        .call-to-action a:hover{
+        background:transparent;
+        border: 2px solid  lightgreen;
+
+        }
+        #main{
+        display: flex;
+        list-style: none;
+
+       }
+       aside{
+        flex: 0 0 20vw ;
+        padding: 10px;
+        background: beige;
+       }
+       article{
+        padding: 20px;
+
+       }
+       footer{
+        background:  rgba(153, 205, 50, 0.979);
+        padding: 30px;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+       }
+       aside ul a{
+        padding: 10px;
+        color: rgba(153, 205, 50, 0.979);
+        display: block;
+        border-bottom: 1px solid black;
+       }
+       aside img{
+        /* width: 100%; */
+        width: 300px;
+        height: 500px;
+
+       }
+
+       #social-links{
+        display: flex;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+              <li><a href="">Home</a></li>  
+              <li><a href="">About Us</a></li>  
+              <li><a href="">Contact</a></li>  
+            </ul>
+        </nav>
+        <div id="logo"> 
+           <a herf ="">mujju company</a>
+        </div>
+        <nav id="social-links">
+        <ul>
+        <li><a href=""><i class="fa-brands fa-facebook">F</i></a></li>
+        <li><a href=""><i class="fa-brands fa-twitter">T</i></a></li>
+        <li><a href=""><i class="fa-brands fa-google">G</i></a></li>
+        </ul>
+    </nav>
+    </header>
+    <div id="main">
+    <aside class="">
+    <ul>
+    <li><a href="">some Link</a></li>
+    <li><a href="">some Link</a></li>
+    <li><a href="">some Link</a></li>
+    <li><a href="">some Link</a></li>
+    <li><a href="">some Link</a></li>
+    </ul>
+    <img src="alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg" alt="">
+    </aside>
+    <article class="">
+    <h2>Welcome to Our website</h2>
+    <p>Coding, sometimes called computer programming, is how we communicate with computers. Code tells a computer what actions to take, and writing code is like creating a set of instructions. By learning to write code, you can tell computers what to do or how to behave in a much faster way. You can use this skill to make websites and apps, process data, and do lots of other cool things.</p>
+    <h2>Our services</h2>
+    <div class="services-container">
+        <div class="service-box">
+            <div class="service-img">
+                <img src="brandi-redd-aJTiW00qqtI-unsplash.jpg" alt="">
+                        </div>
+                        <div class="service-tital"></div>
+                        <h3>Web Designing</h3>
+                        <div class="service-doec">    
+                            <p>So, it goes without saying that being a web designer is as much about designing as it is about psychologically understanding what you’re designing and making sure it will do what’s expected from it. It’s an addition to great company branding and helps create another funnel for companies</p>
+                    </div>
+                        <div class="call-to-action">
+               <button><a href="">Read more</a></button> 
+                        </div>     
+        </div>
+        <div class="service-box">
+            <div class="service-img">
+                <img src="annie-spratt-MChSQHxGZrQ-unsplash.jpg" alt="">
+                        </div>
+                        <div class="service-tital"></div>
+                        <h3>Web Devlopment</h3>
+                        <div class="service-doec">    
+                            <p>A web developer contributes to the second stage of creating a website. When the entire structure and expectations are set, a web developer can start putting things into practice. And even here, you can have different types of web developers as well. When hiring or becoming a web developer, you can take your pick between these three options:</p>
+                    </div>
+                   
+                        <div class="call-to-action">
+               <button> <a href="">Read more</a></button>
+                        </div>     
+        </div>
+        <div class="service-box">
+            <div class="service-img">
+                <img src="alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg "alt="">
+                        </div>
+                        <div class="service-tital"></div>
+                        <h3>Mobile App Devlopment</h3>
+                        <div class="service-doec">    
+                            <p>Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems. The software can be preinstalled on the device, downloaded from a mobile app store or accessed through a mobile web browser. The programming and markup languages used for this kind of software development include Java, Swift, C# and HTML5.
+    
+                            </p>
+                    </div>
+                        <div class="call-to-action">
+              <button> <a href="">Read more</a> </button>
+                        </div>     
+        </div>
+    </div>
+    </article>
+    </div>
+    <footer>
+        Made mujahid_khan_111
+    </footer>
+</body>
+</html>
