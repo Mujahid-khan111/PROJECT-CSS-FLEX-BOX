@@ -1,1 +1,1 @@
-css-gride
+css-grid
